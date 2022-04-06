@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Layout.module.css'
 import Btn from '../components/Button'
+import mayday from '../public/mayday03.png'
 
 const Home: NextPage = () => {
   return (
@@ -15,11 +16,8 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <h1 className={styles.title}>Coming Soon..</h1>
-          <Btn></Btn>
-          <Btn></Btn>
-          <Btn></Btn>
-          <Btn></Btn>
+          <Image src={mayday}/>
+          <a className={styles.title}>COMING SOON..</a>
         </div>
       </main>
     </div>
