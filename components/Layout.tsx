@@ -1,19 +1,15 @@
 import Navbar from './Navbar'
 import styles from '../styles/Layout.module.css'
-import React, {FC} from "react";
+import React, { FC } from 'react'
 
-interface Props {
-
-}
+interface Props {}
 
 const Layout: FC<Props> = ({ children }) => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <div className={styles.container}>
-        <main className={styles.main}>
-          {children}
-        </main>
+        <main className={styles.main}>{children}</main>
       </div>
     </>
   )
